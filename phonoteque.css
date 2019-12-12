@@ -1,0 +1,346 @@
+/*----------------------------------------HEADER / FOOTER ---------------------------------------------*/
+
+
+
+/*----------------------------------------Phonoteque---------------------------------------------*/
+
+
+
+
+
+
+/*----------------------------------------Style1(Dani Leigh) ---------------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.bodystyle1{
+  background: #030321;
+  font-family: Arial;
+  margin: 0 ;
+  padding: 0 ;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    height: 150px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+
+.danileigh{
+	background-image: url(photo/backgrounddani.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#titrerap{
+	text-align: center;
+	color: black ;
+	font-weight: bold;
+	font-size: 30px ;
+}
+
+.titredani{
+
+	background-color: rgb(0, 0, 0, 0.5);
+	text-align: center;
+	color: white ;
+	font-weight: bold;
+	font-size: 30px ;
+}
+
+.descriptiondani{
+	background-color: rgb(255, 255, 255, 0.5);
+	color: black ;
+	font-size: 25px ;
+	text-align: center;
+	border-style: solid;
+	border-color : black;
+}
+
+.audiodanileigh{
+	background-color: rgb(255, 255, 255, 0.5);
+	margin-top: 2% ;
+	margin-left: auto;
+   	margin-right: auto;
+	display: flex;
+    justify-content: center;
+    height: 250px ;
+}
+
+#audiodani{
+	color: black ;
+	font-size: 20px;
+	justify-content: space-between;
+	text-align: center;
+	width: 30% ;
+	height: 50%;
+	padding-top: 3%;
+}
+
+
+.albumdani{
+	text-align: center;	
+}
+
+.imagedanialbum{
+	display: flex;
+}
+
+
+.reseauxdani{
+	text-align: center;
+}
+
+#reseau{
+	width: 5% ;
+}
+
+#photoalbum{
+	width: 10% ;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+
+
+.kendricklamar{
+	background-image: url(photo/kendricklamar1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+
+.titrekendrick{
+
+	background-color: rgb(0, 0, 0, 0.5);
+	text-align: center;
+	color: white ;
+	font-weight: bold;
+	font-size: 30px ;
+}
+
+.descriptionkendrick{
+	background-color: rgb(255, 255, 255, 0.5);
+	color: black ;
+	font-size: 25px ;
+	text-align: center;
+	border-style: solid;
+	border-color : black;
+}
+
+.audiolamar{
+	background-color: rgb(255, 255, 255, 0.5);
+	margin-top: 2% ;
+	margin-left: auto;
+   	margin-right: auto;
+	display: flex;
+    justify-content: center;
+    height: 250px ;
+}
+
+#audiokendrick{
+	color: black ;
+	font-size: 20px;
+	justify-content: space-between;
+	text-align: center;
+	width: 30% ;
+	height: 50%;
+	padding-top: 3%;
+}
+
+
+.albumkendrick{
+	text-align: center;	
+}
+
+
+.reseauxkendrick{
+	text-align: center;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+
+
+.xxxtentacion{
+	background-image: url(photo/xxxtentacion.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+
+.titrexxx{
+
+	background-color: rgb(0, 0, 0, 0.5);
+	text-align: center;
+	color: white ;
+	font-weight: bold;
+	font-size: 30px ;
+}
+
+.descriptionxxx{
+	background-color: rgb(255, 255, 255, 0.5);
+	color: black ;
+	font-size: 25px ;
+	text-align: center;
+	border-style: solid;
+	border-color : black;
+}
+
+.audioxxx{
+	background-color: rgb(255, 255, 255, 0.5);
+	margin-top: 2% ;
+	margin-left: auto;
+   	margin-right: auto;
+	display: flex;
+    justify-content: center;
+    height: 250px ;
+}
+
+#audioxxx{
+	color: black ;
+	font-size: 20px;
+	justify-content: space-between;
+	text-align: center;
+	width: 30% ;
+	height: 50%;
+	padding-top: 3%;
+}
+
+
+.albumxxx{
+	text-align: center;	
+
+}
+
+
+.reseauxxxx{
+	text-align: center;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------Style2(RAP FR)-------------------------------------------------*/
+
+#secrapfr{
+	background-image: url(photo/rapfr.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.main2{
+	width: 60%;
+	margin: 40px auto ;
+}
+
+#photostyle2{
+	width: 20% ;
+}
+.presentationniska{
+
+	height: 550px;
+
+}
+
+#presentation{
+	width: 40%;
+    margin-top: 10% ;
+    padding-left: .5rem;
+    margin-left: 15%;
+    float: left;
+    text-align: center;
+    box-shadow: inset 10px 0 10px -5px black;
+    font-style: italic;
+    color: darkblue;
+}
+
+#titrerapfr{
+	text-align: center;
+	color: white ;
+	font-size: 30px ;
+}
+
+
+
+#albumrapfr{
+	width: 25% ;
+	
+}
+
+#inforapfr{
+	float: right;
+	color: red ;
+	font-size: 20px ;
+}
+
+#audiorapfr{
+	float: right;
+	padding-top: 20%;
+
+}
+
+
+#photonekfeu{
+	width: 30% ;
+	height: 600px ;
+}
+
+#photoorelsan{
+	height: 650px ;
+}
