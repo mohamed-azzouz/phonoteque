@@ -737,3 +737,7 @@ mark{
     width: -webkit-fill-available;
     background-size: cover;
 }
+
+#copypy{
+    color: white;
+}
