@@ -4,6 +4,12 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Skranji&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+
+
+
 
 
 
@@ -64,58 +70,57 @@
     align-items: center;
 }
 
-#menu li
-{ 
-	float : left; 
-	border-right : 1px solid #fff;
-	font-size: 14px;
-	line-height: 35px;
-	height: 35px;
-	white-space:nowrap;
-}
-
-html>body #menu li
-{
-	border-right: 1px solid transparent ;
-}
-
 #menu li ul
 { 
 	position: absolute;
 	left: -999em; 
 }
-#menu li ul li
+
+#menu li ul li{
+    border: 1px solid #CCCCCC;
+    background-color: #000000;
+    font-weight: normal;
+    color: #666666;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 10px;
+    padding: 5px;
+    width: 223px;
+    margin-left: 24px;
+}
+
+#menu li ul li:hover{
+    background-color: #BA4A02;
+}
+
+
+#menu li ul .genre-zik
 {
 	border: 1px solid #CCCCCC;
-	font-size: 12px;
-	background-color: #EEEEEE;
-	font-weight: normal;
-	text-align: left;
-	color: #666666;
-	height: 28px;
-	line-height: 28px;
-	text-indent: 10px;
-	float: none;
-
+    background-color: #000000;
+    font-weight: normal;
+    color: #666666;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 10px;
+    padding: 5px;
+    width: 167px;
+    margin-left: -33px;
 }
 
-#menu a:hover, #menu li ul a:hover
-{
-	background: #b1d9ff;
-}
-
-#menu li:hover ul ul, #menu li.sfhover ul ul 
+#menu li:hover ul ul
 {
 	left: -999em; 
 }
 
-#menu li:hover ul, #menu li li:hover ul, #menu li.sfhover ul, #menu li li.sfhover ul 
+#menu li:hover ul, #menu li li:hover ul 
 {
 	left: 849px;;
     width: 122px;
     min-height: 0;
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 #menu li li:hover ul{
@@ -124,16 +129,16 @@ html>body #menu li
     min-height: 0;
 }
 
-#menu li li:hover #ul-type1{
-    top:0;
+#menu li:hover #ul-type1{
+    top:-10px;
 }
-#menu li li:hover #ul-type2{
+#menu li:hover #ul-type2{
     top:30px;
 }
-#menu li li:hover #ul-type3{
-    top:60px;
+#menu li:hover #ul-type3{
+    top:70px;
 }
-#menu li li:hover #ul-type4{
+#menu li:hover #ul-type4{
     top:90px;
 }
 
@@ -142,7 +147,7 @@ html>body #menu li
     color: white;
     padding: 12px 25px;
     font-size: 25px;
-    text-shadow: 0px 0px 4px darkblue;
+    margin-bottom: 5px;
 }
 
 #menu a:hover
@@ -152,26 +157,12 @@ html>body #menu li
 
 #menu li ul li a {
 	padding-left: 0px;
-	color: #666666;
+	color: white;
 }
 
 #menu li ul li a:hover
 {
 	font-weight: normal;
-	background-color: #ffffff;
-}
-
-#menu li:hover {
-	background-image: url('../image/li_hover.png');
-	background-repeat: repeat-x;
-}
-
-#menu span {
-	margin-right: 20px;
-    padding-left: 9px;
-    padding-right: 16px;
-	background: url("../image/menu_fleche_bas.png") no-repeat scroll right center transparent;
-	font-size: 14px;
 }
 
 
@@ -181,7 +172,6 @@ html>body #menu li
 .formulaire .champ{
     width: 400px;
     height: 35px;
-    border: 4px ridge navy;
     padding-left: 8px;
 }
 .formulaire .bouton{
@@ -305,7 +295,7 @@ html>body #menu li
 #ambiance{
     color: white;
     text-align: center;
-    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Skranji', cursive;
     border-radius: 50%;
     margin: 10px;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
@@ -547,6 +537,7 @@ span{
 #art-blackpink{
     display: flex;
     background-color: #027484;
+    margin-bottom: 100px;
 }
 
 #img-block4{
@@ -591,4 +582,158 @@ span{
     align-items: center;
     justify-content: center;
     box-shadow: 0px -1px 7px black;
+    position: fixed;
+    top: 853px;
+    width: -webkit-fill-available;
+}
+
+
+/* ///////////////////// POP ////////////////////// */
+
+
+
+
+
+
+
+#head-pop{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: -webkit-fill-available;
+    top: 0px;
+    z-index: 100;
+    background-image: url(../img/sam.jpg);
+    background-position-y: -344px;
+    background-size: cover;
+    box-shadow: 0px 1px 5px black;
+}
+
+#body-style4{
+    margin: 0;
+    padding: 0;
+}
+
+#main-pop{
+    display: flex;
+    margin: 84px 0;
+}
+
+#pop-sec1{
+    background-color:black;
+    flex-basis: 25%;
+}
+
+#pop-sec2{
+    background-image: url(../img/chemin-de-ferrail.jpg);
+    flex-basis: 50%;
+    background-size: cover;
+    opacity: 0.99;
+    position: relative;
+    z-index: -1;
+}
+
+#pop-style{
+    position: absolute;
+    z-index: 100;
+    opacity: 10;
+    width: 400px;
+    left: 275px;
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    top: 52px;
+}
+
+@keyframes pulse {to {box-shadow: 0 0 0 40px rgba(232, 76, 61, 0);}}
+
+#pop-sec3{
+    background-color: black;
+    flex-basis: 25%;
+}
+
+.pop-img{
+    width: 50%;
+    box-shadow: 0px 0px 6px black;
+}
+
+.pop-art, .pop-art2{
+    display: flex;
+}
+
+.pop-art:nth-of-type(even){
+    justify-content: flex-end;
+    background-color: white;
+}
+
+.pop-art:nth-of-type(odd){
+    color: white;
+}
+
+.pop-art2:nth-of-type(odd){
+    justify-content: flex-end;
+    background-color:white;
+}
+
+.pop-art2:nth-of-type(even){
+    color: white;
+}
+
+.pop-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Lobster', cursive;
+    margin-left: 8px;
+}
+
+.pop-audio{
+    width: 221px;
+}
+
+.pop-audio1demi{
+    margin-right: 8px;
+    width: 223px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+mark{
+    background-color: white;
+    border-radius: 5px;
+    padding: 4px;
+    margin-right: 9px;
+}
+
+.pop-mark{
+    background-color: black;
+    color: white;
+}
+
+.pop-audio2{
+    width: 222px;
+}
+
+.pop-details2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Lobster', cursive;
+    margin: 0 8px;
+}
+
+#foot-pop{
+    background-image: url(../img/sam.jpg);
+    height: 84px;
+    background-position-y: -373px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px -1px 5px black;
+    position: fixed;
+    top: 853px;
+    width: -webkit-fill-available;
+    background-size: cover;
 }
