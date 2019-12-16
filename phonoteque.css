@@ -1,8 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Skranji&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+
+
 /*----------------------------------------HEADER / FOOTER ---------------------------------------------*/
+#head-acceuil{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: -webkit-fill-available;
+    top: 0px;
+    z-index: 100;
+    background-image: url(photo/header-accueil.jpg);
+    background-position-y: -192px;
+    box-shadow: 0px 0px 20px royalblue;
+}
 
 
+#head-rapus{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: -webkit-fill-available;
+    top: 0px;
+    z-index: 100;
+    background-image: url(photo/header-rapus.jpg);
+    background-position-y: -192px;
+    box-shadow: 0px 0px 20px royalblue;
+}
+
+
+
+#head-rapfr{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: -webkit-fill-available;
+    top: 0px;
+    z-index: 100;
+    background-image: url(photo/header-rapfr.jpg);
+    background-position-y: -192px;
+    box-shadow: 0px 0px 20px royalblue;
+}
+
+
+
+#head-kpop{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: -webkit-fill-available;
+    top: 0px;
+    z-index: 100;
+    background-image: url(img/orig_197600.jpg);
+    background-position-y: -192px;
+    box-shadow: 0px 0px 20px royalblue;
+}
+
+#head-pop{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: -webkit-fill-available;
+    top: 0px;
+    z-index: 100;
+    background-image: url(img/sam.jpg);
+    background-position-y: -344px;
+    background-size: cover;
+    box-shadow: 0px 1px 5px black;
+}
+
+#accueil{
+    width: 80px;
+}
+
+#accueil:hover{
+    transform: scale(1.1);
+}
+
+#searchbar{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#menu, #menu ul
+{
+	list-style : none;
+    line-height : 21px;   
+    width: 550px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menu
+{
+    font-weight: bold;
+    font-family: Arial;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+#menu li ul
+{ 
+	position: absolute;
+	left: -999em; 
+}
+
+#menu li ul li{
+    border: 1px solid #CCCCCC;
+    background-color: #000000;
+    font-weight: normal;
+    color: #666666;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 10px;
+    padding: 5px;
+    width: 223px;
+    margin-left: 24px;
+}
+
+#menu li ul li:hover{
+    background-color: #BA4A02;
+}
+
+
+#menu li ul .genre-zik
+{
+	border: 1px solid #CCCCCC;
+    background-color: #000000;
+    font-weight: normal;
+    color: #666666;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 10px;
+    padding: 5px;
+    width: 167px;
+    margin-left: -33px;
+}
+
+#menu li:hover ul ul
+{
+	left: -999em; 
+}
+
+#menu li:hover ul, #menu li li:hover ul 
+{
+	left: 849px;;
+    width: 122px;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#menu li li:hover ul{
+    left: 122px;
+    width: 122px;
+    min-height: 0;
+}
+
+#menu li:hover #ul-type1{
+    top:-10px;
+}
+#menu li:hover #ul-type2{
+    top:30px;
+}
+#menu li:hover #ul-type3{
+    top:70px;
+}
+#menu li:hover #ul-type4{
+    top:90px;
+}
+
+#menu a {
+	text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+#menu a:hover
+{
+	font-weight: bold;
+}
+
+#menu li ul li a {
+	padding-left: 0px;
+	color: white;
+}
+
+#menu li ul li a:hover
+{
+	font-weight: normal;
+}
+
+
+.formulaire{
+    display:inline-block;
+}
+.formulaire .champ{
+    width: 400px;
+    height: 35px;
+    padding-left: 8px;
+}
+.formulaire .bouton{
+    background-image: url(img/search-148820_640.png);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+}
+
+.formulaire .bouton:hover{
+    transform: scale(1.1);
+}
 
 /*----------------------------------------Phonoteque---------------------------------------------*/
+
+
+.mainacceuil{
+	background-image: url(photo/backaccueil.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 5%;
+}
+
+
+
+.defileParent {
+	display: block;
+	margin: 3em auto;
+	overflow: hidden;
+	position: relative;
+	table-layout: fixed;
+	width: 10%;
+	padding-top: 10%;
+}
+
+.defile {
+	color: red ;
+	font-size: 40px ;
+	display:block;
+	animation:linear marqueelike 10s infinite ;
+	margin-left:-100%;
+	padding:0 5px;
+	text-align:left;
+	height:45px;
+}
+
+@-webkit-keyframes marqueelike {
+ 	0%, 100% {margin-left:0;}
+ 	99.99% {margin-left:-100%;}
+ }
+
+ .categories{
+ 	display: flex;
+ 	justify-content: space-between;
+
+ }
+
+ .accueilrapus{
+ 	background-image: url(photo/accueilrapus.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	width: 15% ;
+ 	height: 500px ;
+ 	
+ 	
+ }
+
+  .accueilrapfr{
+ 	background-image: url(photo/accueilrapfr.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	width: 15% ;
+ 	height: 500px ;
+ 	
+ 	
+ }
+
+ .accueilkpop{
+ 	background-image: url(photo/accueilkpop.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	width: 15% ;
+ 	height: 500px ;
+ 	
+ 	
+ }
+
+
+ .accueilpop{
+ 	background-image: url(photo/accueilpop.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	width: 15% ;
+ 	height: 500px ;
+ 	
+
+ }
+
+ .accueilartiste{
+ 	padding-top: 10%;
+ 	display: flex;
+ 	justify-content: space-around;
+ }
+
+.artisterapus{
+	background-image: url(photo/danileigh.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	width: 15% ;
+ 	height: 300px ;
+ }
+
+.artisterapfr{
+ 	background-image: url(photo/niska.png);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	width: 15% ;
+ 	height: 300px ;
+ }
+
+.artistekpop{
+ 	background-image: url(img/blackpink.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	width: 15% ;
+ 	height: 300px ;
+ }
+
+
+.artistepop{
+ 	background-image: url(photo/birdy.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	width: 15% ;
+ 	height: 300px ;
+ }
+
+ 
+ #titreaccueilcat{
+ 	text-align: center;
+ 	font-size: 25px ;
+ 	color: white ;
+ }
+
+
+ #paraaccueilcat {
+ 	text-align: center;
+ 	font-size: 15px ;
+ 	color: white ;
+ 	text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+ }
+
+ #lienacceuil{
+ 	color: red;
+ 	display: block;
+ 	text-align: center;
+ 	font-size: 20px ;
+
+ }
+
+ #accueiltitre{
+ 	text-align: center;
+ }
+
+ #descriptionartiste{
+ 	color: red ;
+ 	text-align: center;
+ 	text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+ }
 
 
 
@@ -21,6 +398,7 @@
 }
 
 svg {
+	padding-top: 3%;
     display: block;
     font: 10.5em 'Montserrat';
     height: 150px;
@@ -277,6 +655,10 @@ svg {
 /*----------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------Style2(RAP FR)-------------------------------------------------*/
 
+.bodystyle2{
+	
+}
+
 #secrapfr{
 	background-image: url(photo/rapfr.jpg);
 	background-repeat: no-repeat;
@@ -343,4 +725,610 @@ svg {
 
 #photoorelsan{
 	height: 650px ;
+}
+
+
+
+/*--------------------------Style 3 & 4 ---------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+
+
+
+
+
+#body-style3{
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    /* background-size: contain; */
+    background-image: url(img/de41e90415e8307e181978ab25a0d6ce.jpg);
+    background-repeat: no-repeat;
+}
+
+#kpop-maindiv1{
+    background-image: url(img/kpop.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 625px;
+    margin: auto;
+    background-position: center;
+    border-top: 5px solid darkslateblue;
+    border-bottom: none;
+    box-shadow: 0px -1px 3px #ff00fb;
+    border-radius: 0 0px 1px 1px;
+    background-color: white;
+    margin-top: 100px;
+}
+
+#kpop-maindiv2{
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    justify-content: space-evenly;
+    height: 400px;
+    align-items: center;
+    border-top: none;
+    box-shadow: 0px 5px 3px black;
+    border-radius: 1px 1px 0 0;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.img{
+    width: 90%;
+    align-self: center;
+}
+
+.img:hover{
+    transform: scale(1.1);
+    padding-bottom: 10px;
+}
+
+.art1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    align-items: center;
+}
+
+.infos-album{
+    width: 210px;
+}
+
+#img4{
+    width: 87.5%;
+}
+
+#deroulant{    
+    margin: 0em auto 0em;
+    overflow: hidden;
+    width: 1200px;
+}
+
+#deroulant > :first-child{
+    display: inline-block;
+    padding-right: 2em; 
+    padding-left: 100%;
+    white-space: nowrap;
+    animation: defilement-rtl 15s infinite linear;
+    font-family: 'Odibee Sans', cursive;
+    font-size: 32px;
+    color: #AD2FB4;
+}
+
+@keyframes defilement-rtl {
+    0% {
+      transform: translate3d(0,0,0);      /* position initiale à droite */
+    }
+    100% {
+      transform: translate3d(-100%,0,0);  /* position finale à gauche */
+   }
+}
+
+.stars{
+    margin: 0;
+    font-family: 'Audiowide', cursive;
+}
+
+.pata{
+    margin: 0;
+    font-family: 'Pattaya', sans-serif;
+}
+
+#ambiance{
+    color: white;
+    text-align: center;
+    font-family: 'Skranji', cursive;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 1.3s infinite;
+    padding: 58px;
+    text-shadow: 0px 0px 26px black;
+    font-size: 30px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+#art-sistar{
+    display: flex;
+    background-color: brown;
+}
+
+#sistar-png{
+    width: 95%;
+}
+
+.art2{
+    width: 1200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.title-time{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+#album-details{
+    display: flex;
+    flex-direction: column;
+    background-color: #962626;
+    padding: 0 30px;
+    box-shadow: 0px 0px 2px black;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Odibee Sans', cursive;
+    color: white;
+    font-size: 19px;
+}
+
+#img-block{
+    display: flex;
+    justify-content: right;
+    flex-basis: 36.5%;
+    border: 8px solid white;
+}
+
+#lecture{
+    flex-basis: 36.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 8px solid white;
+}
+
+.title-title{
+    margin: 0;
+    align-self: flex-start;
+    padding: 17px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.para{
+    margin: 0;
+    padding-bottom: 5px;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+}
+
+.lien-center{
+    display: flex;
+    justify-content: center;
+}
+
+#kpop-maindiv2 .img{
+    transition: all 0.2s ease-out;
+    opacity: 1;
+}
+
+#kpop-maindiv2:hover .img:hover{
+    transition: all 0.2s ease-out;
+    opacity: 0.5;
+}
+
+.social-kpop{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.insta{
+    width: 60%;
+}
+
+.twit{
+    width: 60%;
+}
+
+.yout{
+    width: 80%;
+}
+
+.audio1{
+    padding: 0px;
+    margin-bottom: 15px;
+}
+
+.audio2{
+    margin-bottom: 25px;
+}
+
+
+
+
+
+#art-gdragon{
+    display: flex;
+    background-color: white;
+}
+
+#gdragon-jpg{
+    width: 80%;
+}
+
+#img-block2{
+    display: flex;
+    flex-basis: 35%;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid black;
+}
+
+#album-details2{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    box-shadow: 0px 0px 2px black;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Odibee Sans', cursive;
+    color: black;
+    font-size: 19px;
+    flex-basis: 41%;
+}
+
+#lecture2{
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 8px solid black;
+}
+
+.lienscale{
+    transition:transform .9s;
+}
+
+.lienscale:hover{
+    transform:rotate(720deg) scale(1.2);
+}
+
+
+
+
+
+
+
+#art-ggen{
+    display: flex;
+    background-color: pink;
+}
+
+#ggen-png{
+    width: 100%;
+    height: 80%;
+}
+
+#img-block3{
+    display: flex;
+    justify-content: center;
+    flex-basis: 38%;
+    border: 8px solid #ff09cf;
+    align-items: center;
+}
+
+#album-details3{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    box-shadow: 0px 0px 2px black;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Odibee Sans', cursive;
+    color: #c7385f;
+    font-size: 19px;
+    flex-basis: 44%;
+}
+
+#lecture3{
+    flex-basis: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 8px solid #ff09cf;
+}
+
+span{
+    color: black;
+}
+
+
+
+
+
+#art-blackpink{
+    display: flex;
+    background-color: #027484;
+    margin-bottom: 100px;
+}
+
+#img-block4{
+    display: flex;
+    justify-content: center;
+    flex-basis: 38%;
+    border: 8px solid #272020;
+    align-items: center;
+}
+
+#blackping-png{
+    width: 70%;
+}
+
+#album-details4{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    box-shadow: 0px 0px 2px black;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Odibee Sans', cursive;
+    color: white;
+    font-size: 19px;
+    flex-basis: 44%;
+}
+
+#lecture4{
+    flex-basis: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 8px solid #272020;
+}
+
+#foot-kpop{
+    background-image: url(img/orig_197600.jpg);
+    height: 84px;
+    background-position-y: -373px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px -1px 7px black;
+    position: fixed;
+    top: 853px;
+    width: -webkit-fill-available;
+}
+
+
+/* ///////////////////// POP ////////////////////// */
+
+
+
+
+
+
+
+#head-pop{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: -webkit-fill-available;
+    top: 0px;
+    z-index: 100;
+    background-image: url(img/sam.jpg);
+    background-position-y: -344px;
+    background-size: cover;
+    box-shadow: 0px 1px 5px black;
+}
+
+#body-style4{
+    margin: 0;
+    padding: 0;
+}
+
+#main-pop{
+    display: flex;
+    margin: 84px 0;
+}
+
+#pop-sec1{
+    background-color:black;
+    flex-basis: 25%;
+}
+
+#pop-sec2{
+    background-image: url(img/chemin-de-ferrail.jpg);
+    flex-basis: 50%;
+    background-size: cover;
+    opacity: 0.99;
+    position: relative;
+    z-index: -1;
+}
+
+#pop-style{
+    position: absolute;
+    z-index: 100;
+    opacity: 10;
+    width: 400px;
+    left: 275px;
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    top: 52px;
+}
+
+@keyframes pulse {to {box-shadow: 0 0 0 40px rgba(232, 76, 61, 0);}}
+
+#pop-sec3{
+    background-color: black;
+    flex-basis: 25%;
+}
+
+.pop-img{
+    width: 50%;
+    box-shadow: 0px 0px 6px black;
+}
+
+.pop-art, .pop-art2{
+    display: flex;
+}
+
+.pop-art:nth-of-type(even){
+    justify-content: flex-end;
+    background-color: white;
+}
+
+.pop-art:nth-of-type(odd){
+    color: white;
+}
+
+.pop-art2:nth-of-type(odd){
+    justify-content: flex-end;
+    background-color:white;
+}
+
+.pop-art2:nth-of-type(even){
+    color: white;
+}
+
+.pop-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Lobster', cursive;
+    margin-left: 8px;
+}
+
+.pop-audio{
+    width: 221px;
+}
+
+.pop-audio1demi{
+    margin-right: 8px;
+    width: 223px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+mark{
+    background-color: white;
+    border-radius: 5px;
+    padding: 4px;
+    margin-right: 9px;
+}
+
+.pop-mark{
+    background-color: black;
+    color: white;
+}
+
+.pop-audio2{
+    width: 222px;
+}
+
+.pop-details2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Lobster', cursive;
+    margin: 0 8px;
+}
+
+#foot-pop{
+    background-image: url(img/sam.jpg);
+    height: 84px;
+    background-position-y: -373px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px -1px 5px black;
+    position: fixed;
+    top: 853px;
+    width: -webkit-fill-available;
+    background-size: cover;
+}
+
+#copypy{
+    color: white;
+}
+#foot-kpop{
+    background-image: url(img/orig_197600.jpg);
+    height: 84px;
+    background-position-y: -373px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px -1px 7px black;
+}
+
+#foot-rapus{
+    background-image: url(photo/header-rapus.jpg);
+    height: 84px;
+    background-position-y: -373px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px -1px 7px black;
+    color: white ;
+}
+
+#foot-rapfr{
+    background-image: url(photo/header-rapfr.jpg);
+    height: 84px;
+    background-position-y: -373px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px -1px 7px black;
+    color: white ;
+}
+
+#foot-accueil{
+    /*background-image: url(../img/orig_197600.jpg);*/
+    height: 84px;
+    background-position-y: -373px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px -1px 7px black;
 }
